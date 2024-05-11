@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png.png" class="logo" />
+          <ul>
+            <li><a href="HOME">HOME</a></li>
+            <li><a href="ABOUT">ABOUT</a></li>
+            <li><a href="SERVICES">SERVICES</a></li>
+            <li><a href="PORTFOLIO">PORTFOLIO</a></li>
+            <li><a href="CONTACT">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX desingner</p>
+          <h1>HI,Im ,<span>LASHIN AYOOB</span><br />jen from india</h1>
+        </div>
+      </div>
+    </div>
+    <!----------about---------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Hello I'm LASHIN AYOOB, an innovative web developer with a passion
+              for creating immersive online experiences. I'm currently on the
+              lookout for a new opportunity to collaborate with a
+              forward-thinking team. Specializing in front-end development, I
+              excel in translating design concepts into seamless, responsive
+              websites that leave a lasting impact. From crafting elegant user
+              interfaces to optimizing site performance for speed and
+              accessibility, I bring a blend of creativity and technical
+              expertise to every project. If you're seeking a dedicated
+              developer who thrives in a dynamic environment and is eager to
+              contribute fresh ideas, let's connect. I'm excited to explore how
+              my skills can help bring your digital vision to life.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link"onclick="opentab('skllis')">Skills</p>
+              <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+              <p class="tab-links"onclick="opentab('Education')">Education</p>
+            </div>
+
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br>Desingning web/App interfaces</li>
+                <li><span>Web development</span><br> Aapp development</li>
+                <li><span>App development</span><br>Bulding Andriod/IOS Apps</li>
+              </ul>
+            </div>
+            <div class="tab-content"id="experiences">
+              <ul>
+                <li><span>2023-current</span><br>UI/UX design training at brototype</li>
+                <li><span>2019- 2021</span><br> team leaed at startapp LLC.</li>
+                <li><span>2022-2023</span><br>intership at ekart Ecommerce.</li>
+              </ul>
+            </div>
+            <div class="tab-content"id="Education">
+              <ul>
+                <li><span>2022</span><br>self learned UI/UX design</li>
+                <li><span>2023</span><br>AIMS instutions bangalore</li>
+                <li><span>2024</span><br>full stack develebment at brototype</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      var tablinks=document.getElementsByClassName("tab-links")
+      var tabcontent=document.getElementsByClassName("tab-content")
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classlist.remove("active-link")
+        }
+        for(tabcontent of tabcontent){
+          tabcontent.classlist.remove("active-tab")
+        }
+      }
+    </script>
+  </body>
+</html>
